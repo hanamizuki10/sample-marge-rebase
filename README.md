@@ -70,7 +70,7 @@ git add  README.md
 git commit -m "branch-a, 競合を解消"
 ```
 
-### ケース1.ブランチ branch-a の内容をmasterにマージする
+### ブランチ branch-a の内容をmasterにマージする
 ```
 git fetch
 git diff origin/branch-a
