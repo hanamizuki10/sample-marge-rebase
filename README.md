@@ -86,3 +86,13 @@ git checkout -b branch-b
 git commit --allow-empty -m "branch-b, ブランチを作成"
 git push origin branch-b
 ```
+### GitHub上でmasterの変更内容をブランチ branch-b に対して適用させた時のローカルに適用させる方法
+※前提として、ローカルの状態は前回のcommitを最後に、変更がない状態であること
+その上で以下のコマンド実行で適用可能。
+```
+git fetch branch-b
+git diff origin/branch-b
+git log 
+git log origin/branch-b
+git merge origin/branch-b
+```
