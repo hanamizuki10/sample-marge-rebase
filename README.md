@@ -70,3 +70,11 @@ git status
 git add  README.md 
 git commit -m "branch-a, 競合を解消"
 ```
+
+
+## ケース2.ブランチ branch-b を作成し、GitHubでプルリクを作成し、作業している最中にmasterの更新が発生
+```
+git checkout -b branch-b
+git commit --allow-empty -m "branch-b, ブランチを作成"
+git push origin branch-b
+```
