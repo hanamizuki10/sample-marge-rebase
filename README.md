@@ -4,7 +4,6 @@ Gitのrebaseとmergeの挙動の違いを検証
 コミットメッセージ ルール
 ブランチ名を記載する。
 
-
  - merge
  マージ、合流
  - fast-forward merge
@@ -43,3 +42,9 @@ git fetch origin branch-a
 // マスターと比較すると競合が発生しているバイアは-/+が表示される
 git diff origin/master
 ```
+
+## マスター用に追加
+```
+git clone git@github.com:hanamizuki10/sample-marge-rebase.git sample-marge-rebase-master
+```
+
