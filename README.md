@@ -10,6 +10,12 @@ Gitのrebaseとmergeの挙動の違いを検証
  - non fast-forward merge
  - rebase
 
+## マスター用に追加
+```
+git clone git@github.com:hanamizuki10/sample-marge-rebase.git sample-marge-rebase-master
+```
+
+
 ## ケース1.ブランチ branch-a を作成し、作業している最中にmasterの更新が発生
 
 ```
@@ -42,9 +48,3 @@ git fetch origin branch-a
 // マスターと比較すると競合が発生しているバイアは-/+が表示される
 git diff origin/master
 ```
-
-## マスター用に追加
-```
-git clone git@github.com:hanamizuki10/sample-marge-rebase.git sample-marge-rebase-master
-```
-
