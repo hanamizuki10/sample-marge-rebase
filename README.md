@@ -66,4 +66,7 @@ git status
 //  > 
 //  >         both modified:   README.md
 
+// 競合したファイル README.md を修正し、以下のような感じでコマンド実行で適用させる
+git add  README.md 
+git commit -m "branch-a, 競合を解消"
 ```
