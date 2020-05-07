@@ -18,4 +18,5 @@ branch-aの内容をmasterにマージする
 ```
 git fetch
 git diff origin/branch-a
+git merge branch-a
 ```
