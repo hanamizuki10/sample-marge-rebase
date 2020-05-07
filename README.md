@@ -45,6 +45,23 @@ git merge origin/master
 // ブランチをもとに戻す
 git checkout branch-a
 git fetch origin branch-a
-// マスターと比較すると競合が発生しているバイアは-/+が表示される
+// マスターと比較すると競合が発生している場合は-/+が表示される
 git diff origin/master
+// この状態で以下マージをするとCONFLICTが発生
+git merge origin/master
+//  > Auto-merging README.md
+//  > CONFLICT (content): Merge conflict in README.md
+//  > Automatic merge failed; fix conflicts and then commit the result.
+// ステータスを確認すると以下のような表示になる
+//  > git status
+//  > On branch branch-a
+//  > You have unmerged paths.
+//  >   (fix conflicts and run "git commit")
+//  >   (use "git merge --abort" to abort the merge)
+//  > 
+//  > Unmerged paths:
+//  >   (use "git add <file>..." to mark resolution)
+//  > 
+//  >         both modified:   README.md
+
 ```
