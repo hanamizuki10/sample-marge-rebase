@@ -26,6 +26,20 @@ git push origin branch-a
 
 #### 第一. master と競合していないか確認する。
 現在の編集中の状況を全てコミットしてから master に切り替える。
+```
+// いったんmasterブランチに切り替える
 git checkout master
 git fetch
+// リモートとローカルのログを確認
+git log
+git log origin/master
+// ソースコード差分を確認
+git diff origin/master
+// 問題ないためマージ
 git merge origin/master
+// ブランチをもとに戻す
+git checkout branch-a
+git fetch origin branch-a
+// マスターと比較すると競合が発生しているバイアは-/+が表示される
+git diff origin/master
+```
