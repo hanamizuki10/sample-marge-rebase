@@ -15,7 +15,6 @@ Gitのrebaseとmergeの挙動の違いを検証
 git clone git@github.com:hanamizuki10/sample-marge-rebase.git sample-marge-rebase-master
 ```
 
-
 ## ケース1.ブランチ branch-a を作成し、作業している最中にmasterの更新が発生
 
 ```
@@ -70,7 +69,16 @@ git status
 git add  README.md 
 git commit -m "branch-a, 競合を解消"
 ```
-
+### ブランチ branch-a の内容をmasterにマージする
+```
+git fetch
+git diff origin/branch-a
+git merge origin/branch-a
+// 競合を修正
+git add  README.md 
+git commit -m "master, ブランチbranch-aの内容をmasterにマージする,同時に競合を解消させる"
+```
+この場合、non fast-forward mergeのような感じになるけどGitHub上で何が起きたのか分からない感じになった。
 
 ## ケース2.ブランチ branch-b を作成し、GitHubでプルリクを作成し、作業している最中にmasterの更新が発生
 ```
