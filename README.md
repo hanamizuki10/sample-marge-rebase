@@ -13,3 +13,9 @@ rebase
 ```
 git clone git@github.com:hanamizuki10/sample-marge-rebase.git sample-marge-rebase-master
 ```
+
+branch-aの内容をmasterにマージする
+```
+git fetch
+git diff origin/branch-a
+```
