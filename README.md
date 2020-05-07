@@ -9,7 +9,7 @@ fast-forward merge
 non fast-forward merge
 rebase
 
-マスター用に追加
+## マスター用に追加
 ```
 git clone git@github.com:hanamizuki10/sample-marge-rebase.git sample-marge-rebase-master
 ```
