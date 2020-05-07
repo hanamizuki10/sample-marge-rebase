@@ -79,3 +79,5 @@ git merge origin/branch-a
 git add  README.md 
 git commit -m "master, ブランチbranch-aの内容をmasterにマージする,同時に競合を解消させる"
 ```
+この場合、non fast-forward mergeのような感じになるけどGitHub上で何が起きたのか分からない感じになった。
+
