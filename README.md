@@ -138,6 +138,9 @@ git merge origin/master
 :w
 :q
 
+git add README.md 
+git commit -m "branch-d, せっかくなのでマスターの更新を適用時のコマンドを追加"
+git push origin branch-d
 ```
 
 ## Git参考文献
