@@ -96,3 +96,9 @@ git log
 git log origin/branch-b
 git merge origin/branch-b
 ```
+
+## Git参考文献
+https://git-scm.com/docs
+
+https://git-scm.com/docs/git#_git_commands
+
