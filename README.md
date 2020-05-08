@@ -112,6 +112,8 @@ git push origin branch-c
 ### GitHub上でブランチ branch-c を masterにマージ（Squash and merge)
 
 
+作業着手ゴミコメントを追加
+
 ## Git参考文献
 https://git-scm.com/docs
 
