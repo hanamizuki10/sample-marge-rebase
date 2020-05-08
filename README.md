@@ -107,22 +107,7 @@ git commit --allow-empty -m "branch-c, ブランチを作成"
 git push origin branch-c
 ```
 
-
-
-意図的に競合させることを更新させる
-
-
-
-### GitHub上でmasterの変更内容をブランチ branch-c に対して適用させた時のローカルに適用させたあと
-※前提として、ローカルの状態は前回のcommitを最後に、変更がない状態であること
-その上で以下のコマンド実行で適用可能。
-```
-git fetch branch-c
-git diff origin/branch-c
-git log 
-git log origin/branch-c
-git merge origin/branch-c
-```
+色々更新して、その後、以下を対応する。
 
 ### GitHub上でブランチ branch-c を masterにマージ（Squash and merge)
 
