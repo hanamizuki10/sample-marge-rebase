@@ -121,6 +121,8 @@ git push origin branch-d
 ```
 
 
+作業着手ゴミコメントを追加
+
 ## Git参考文献
 https://git-scm.com/docs
 
