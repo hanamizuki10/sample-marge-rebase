@@ -111,6 +111,15 @@ git push origin branch-c
 
 ### GitHub上でブランチ branch-c を masterにマージ（Squash and merge)
 
+## ケース4.ブランチ branch-d を作成し、GitHubでプルリクを作成し、作業している最中にmasterの更新が発生,GitHubの機能Rebase and mergeを利用する
+```
+git checkout master
+git pull 
+git checkout -b branch-d
+git commit --allow-empty -m "branch-d, ブランチを作成し、GitHubの機能Rebase and mergeを利用する"
+git push origin branch-d
+```
+
 
 ## Git参考文献
 https://git-scm.com/docs
