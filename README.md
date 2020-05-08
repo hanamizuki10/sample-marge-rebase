@@ -97,6 +97,29 @@ git log origin/branch-b
 git merge origin/branch-b
 ```
 
+### GitHub上でブランチ branch-b を masterにマージ（Merge pull request)
+
+
+## ケース3.ブランチ branch-c を作成し、GitHubでプルリクを作成し、作業している最中にmasterの更新が発生
+```
+git checkout -b branch-c
+git commit --allow-empty -m "branch-c, ブランチを作成"
+git push origin branch-c
+```
+### GitHub上でmasterの変更内容をブランチ branch-c に対して適用させた時のローカルに適用させたあと
+※前提として、ローカルの状態は前回のcommitを最後に、変更がない状態であること
+その上で以下のコマンド実行で適用可能。
+```
+git fetch branch-c
+git diff origin/branch-c
+git log 
+git log origin/branch-c
+git merge origin/branch-c
+```
+
+### GitHub上でブランチ branch-c を masterにマージ（Squash and merge)
+
+
 ## Git参考文献
 https://git-scm.com/docs
 
