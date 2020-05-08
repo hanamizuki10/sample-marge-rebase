@@ -100,5 +100,8 @@ git merge origin/branch-b
 ## Git参考文献
 https://git-scm.com/docs
 
+gitコマンド一覧はこちら
 https://git-scm.com/docs/git#_git_commands
 
+git mergeはこちら
+https://git-scm.com/docs/git-merge

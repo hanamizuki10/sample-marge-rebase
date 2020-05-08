@@ -1,0 +1,1 @@
+# git mergeの解説
