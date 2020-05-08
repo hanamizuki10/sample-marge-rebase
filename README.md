@@ -122,6 +122,23 @@ git push origin branch-d
 
 
 作業着手ゴミコメントを追加
+```
+せっかくなのでマスターの更新を適用
+git checkout master
+git status
+>Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+>  (use "git pull" to update your local branch)
+
+git pull 
+git status
+>Your branch is up to date with 'origin/master'.
+git checkout branch-d
+git diff origin/master
+git merge origin/master
+:w
+:q
+
+```
 
 ## Git参考文献
 https://git-scm.com/docs
