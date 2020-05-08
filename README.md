@@ -106,6 +106,13 @@ git checkout -b branch-c
 git commit --allow-empty -m "branch-c, ブランチを作成"
 git push origin branch-c
 ```
+
+
+
+意図的に競合させることを更新させる
+
+
+
 ### GitHub上でmasterの変更内容をブランチ branch-c に対して適用させた時のローカルに適用させたあと
 ※前提として、ローカルの状態は前回のcommitを最後に、変更がない状態であること
 その上で以下のコマンド実行で適用可能。
