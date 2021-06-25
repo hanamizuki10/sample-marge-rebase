@@ -1,6 +1,6 @@
 # sample-marge-rebase
 Gitのrebaseとmergeの挙動の違いを検証
-
+あ
 コミットメッセージ ルール
 ブランチ名を記載する。
 
